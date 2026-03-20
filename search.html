@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search the Indian Constitution – Articles, Parts, Schedules, Amendments, and Case Laws in one place.">
+  <title>Search – KnowConstitution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-loader" id="pageLoader"><div class="loader-chakra"></div></div>
+<div class="parallax-bg" id="parallaxBg"><div class="layer layer-dots"></div><div class="layer layer-gradient"></div></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">🏛️</span><span>KnowConstitution</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="about.html">About</a>
+      <div class="nav-dropdown"><a href="#" class="dropdown-toggle">Constitution</a><div class="dropdown-menu"><a href="overview.html">Overview</a><a href="rights.html">Fundamental Rights</a><a href="duties.html">Fundamental Duties</a><a href="dpsp.html">Directive Principles</a><a href="articles.html">Articles (1–395)</a><a href="parts.html">Parts</a><a href="schedules.html">Schedules</a></div></div>
+      <a href="amendments.html">Amendments</a><a href="cases.html">Case Laws</a><a href="timeline.html">Timeline</a>
+      <div class="nav-dropdown"><a href="#" class="dropdown-toggle">More</a><div class="dropdown-menu"><a href="search.html">🔍 Search</a><a href="quiz.html">📝 Quiz</a><a href="contact.html">📧 Contact</a></div></div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle Theme">🌙</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="search-hero">
+  <div class="container">
+    <h1 class="section-title" style="margin-bottom: 12px;">Search the <span class="text-saffron">Constitution</span></h1>
+    <p class="section-subtitle" style="margin-bottom: 40px;">Find Articles, Parts, Schedules, Amendments, and Case Laws instantly</p>
+
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" id="searchInput" placeholder="Search by article number, keyword, or topic..." autocomplete="off">
+    </div>
+
+    <div class="search-tabs">
+      <button class="search-tab active" data-tab="all">All</button>
+      <button class="search-tab" data-tab="article">Articles</button>
+      <button class="search-tab" data-tab="part">Parts</button>
+      <button class="search-tab" data-tab="schedule">Schedules</button>
+      <button class="search-tab" data-tab="amendment">Amendments</button>
+      <button class="search-tab" data-tab="caselaw">Case Laws</button>
+    </div>
+  </div>
+</div>
+
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div id="searchResults">
+      <div class="no-results">Start typing to search across the Constitution...</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">🏛️ KnowConstitution</div><p class="footer-desc">A comprehensive civic education platform for every citizen.</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="overview.html">Overview</a></li><li><a href="search.html">Search</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Constitution</h4><ul><li><a href="rights.html">Rights</a></li><li><a href="duties.html">Duties</a></li><li><a href="dpsp.html">DPSP</a></li><li><a href="articles.html">Articles</a></li><li><a href="parts.html">Parts</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="amendments.html">Amendments</a></li><li><a href="schedules.html">Schedules</a></li><li><a href="cases.html">Case Laws</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="quiz.html">Quiz</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 KnowConstitution.</span><div class="tricolor-line" style="width:80px;"></div><span>Made with ❤️ for India</span></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

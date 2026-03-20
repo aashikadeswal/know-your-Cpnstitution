@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Know Your Constitution – A comprehensive civic education platform exploring the Indian Constitution, Fundamental Rights, Duties, Articles, and more.">
+  <title>Know Your Constitution – Civic Education India</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-chakra"></div>
+</div>
+
+<!-- Parallax Background -->
+<div class="parallax-bg" id="parallaxBg">
+  <div class="layer layer-dots"></div>
+  <div class="layer layer-gradient"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">🏛️</span>
+      <span>KnowConstitution</span>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <div class="nav-dropdown">
+        <a href="#" class="dropdown-toggle">Constitution</a>
+        <div class="dropdown-menu">
+          <a href="overview.html">Overview</a>
+          <a href="rights.html">Fundamental Rights</a>
+          <a href="duties.html">Fundamental Duties</a>
+          <a href="dpsp.html">Directive Principles</a>
+          <a href="articles.html">Articles (1–395)</a>
+          <a href="parts.html">Parts</a>
+          <a href="schedules.html">Schedules</a>
+        </div>
+      </div>
+      <a href="amendments.html">Amendments</a>
+      <a href="cases.html">Case Laws</a>
+      <a href="timeline.html">Timeline</a>
+      <div class="nav-dropdown">
+        <a href="#" class="dropdown-toggle">More</a>
+        <div class="dropdown-menu">
+          <a href="search.html">🔍 Search</a>
+          <a href="quiz.html">📝 Quiz</a>
+          <a href="contact.html">📧 Contact</a>
+        </div>
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle Theme">🌙</button>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <!-- Ashoka Chakra SVG -->
+    <div class="chakra-container">
+      <svg class="chakra-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" fill="none" stroke="#FF9933" stroke-width="2" opacity="0.3"/>
+        <circle cx="100" cy="100" r="50" fill="none" stroke="#FF9933" stroke-width="1.5" opacity="0.2"/>
+        <circle cx="100" cy="100" r="15" fill="none" stroke="#06038D" stroke-width="2" opacity="0.3"/>
+        <!-- 24 Spokes -->
+        <g stroke="#06038D" stroke-width="1.5" opacity="0.25">
+          <line x1="100" y1="10" x2="100" y2="50"/><line x1="100" y1="150" x2="100" y2="190"/>
+          <line x1="10" y1="100" x2="50" y2="100"/><line x1="150" y1="100" x2="190" y2="100"/>
+          <line x1="36.4" y1="36.4" x2="64.6" y2="64.6"/><line x1="135.4" y1="135.4" x2="163.6" y2="163.6"/>
+          <line x1="163.6" y1="36.4" x2="135.4" y2="64.6"/><line x1="64.6" y1="135.4" x2="36.4" y2="163.6"/>
+          <line x1="66.9" y1="16.9" x2="82" y2="55.5"/><line x1="118" y1="144.5" x2="133.1" y2="183.1"/>
+          <line x1="133.1" y1="16.9" x2="118" y2="55.5"/><line x1="82" y1="144.5" x2="66.9" y2="183.1"/>
+          <line x1="183.1" y1="66.9" x2="144.5" y2="82"/><line x1="55.5" y1="118" x2="16.9" y2="133.1"/>
+          <line x1="183.1" y1="133.1" x2="144.5" y2="118"/><line x1="55.5" y1="82" x2="16.9" y2="66.9"/>
+          <line x1="16.9" y1="66.9" x2="55.5" y2="82"/><line x1="144.5" y1="118" x2="183.1" y2="133.1"/>
+          <line x1="46.1" y1="19.1" x2="72.5" y2="59"/><line x1="127.5" y1="141" x2="153.9" y2="180.9"/>
+          <line x1="153.9" y1="19.1" x2="127.5" y2="59"/><line x1="72.5" y1="141" x2="46.1" y2="180.9"/>
+          <line x1="180.9" y1="46.1" x2="141" y2="72.5"/><line x1="59" y1="127.5" x2="19.1" y2="153.9"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Civic Education Platform
+    </div>
+    <h1 class="hero-title">
+      <span class="highlight">Know Your</span><br>Constitution
+    </h1>
+    <p class="hero-description">
+      Explore the Indian Constitution like never before. Understand your rights, duties, and the framework that shapes the world's largest democracy.
+    </p>
+    <div class="hero-buttons">
+      <a href="overview.html" class="btn btn-primary">
+        Start Exploring →
+      </a>
+      <a href="search.html" class="btn btn-secondary">
+        🔍 Search Constitution
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="section">
+  <div class="container">
+    <div class="stats-row reveal stagger">
+      <div class="stat-card">
+        <div class="stat-number" data-count="395">0</div>
+        <div class="stat-label">Articles</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="25">0</div>
+        <div class="stat-label">Parts</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="12">0</div>
+        <div class="stat-label">Schedules</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="105">0</div>
+        <div class="stat-label">Amendments</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Explore Sections -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Explore the Constitution</h2>
+    <p class="section-subtitle reveal">Dive into the pillars that uphold India's democratic framework</p>
+    <div class="tricolor-line reveal"></div>
+
+    <div class="cards-grid cards-grid-3 stagger reveal">
+      <a href="rights.html" class="floating-card" style="animation: floatSlow 4s ease-in-out infinite">
+        <div class="card-icon">⚖️</div>
+        <h3 class="card-title">Fundamental Rights</h3>
+        <p class="card-text">Discover the foundational rights guaranteed to every citizen under Articles 12–35.</p>
+        <span class="card-link">Learn more →</span>
+      </a>
+      <a href="duties.html" class="floating-card" style="animation: floatSlow 4.5s ease-in-out infinite 0.5s">
+        <div class="card-icon">🤝</div>
+        <h3 class="card-title">Fundamental Duties</h3>
+        <p class="card-text">Understand the moral obligations that every citizen is expected to uphold.</p>
+        <span class="card-link">Learn more →</span>
+      </a>
+      <a href="dpsp.html" class="floating-card" style="animation: floatSlow 5s ease-in-out infinite 1s">
+        <div class="card-icon">📜</div>
+        <h3 class="card-title">Directive Principles</h3>
+        <p class="card-text">Explore the guiding principles for governance that shape India's policies.</p>
+        <span class="card-link">Learn more →</span>
+      </a>
+      <a href="articles.html" class="floating-card" style="animation: floatSlow 4.2s ease-in-out infinite 0.3s">
+        <div class="card-icon">📖</div>
+        <h3 class="card-title">All 395 Articles</h3>
+        <p class="card-text">Browse every article organized by Parts with easy explanations.</p>
+        <span class="card-link">Explore →</span>
+      </a>
+      <a href="amendments.html" class="floating-card" style="animation: floatSlow 4.8s ease-in-out infinite 0.7s">
+        <div class="card-icon">✏️</div>
+        <h3 class="card-title">Amendments</h3>
+        <p class="card-text">Trace how the Constitution has evolved through landmark amendments.</p>
+        <span class="card-link">View all →</span>
+      </a>
+      <a href="cases.html" class="floating-card" style="animation: floatSlow 4.3s ease-in-out infinite 1.2s">
+        <div class="card-icon">⚡</div>
+        <h3 class="card-title">Landmark Case Laws</h3>
+        <p class="card-text">Study the Supreme Court decisions that shaped constitutional interpretation.</p>
+        <span class="card-link">Browse →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- More Features -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title reveal">More to Discover</h2>
+    <p class="section-subtitle reveal">Interactive tools and resources to deepen your understanding</p>
+    <div class="tricolor-line reveal"></div>
+
+    <div class="cards-grid cards-grid-4 stagger reveal">
+      <a href="parts.html" class="floating-card">
+        <div class="card-icon" style="background: rgba(19,136,8,0.1)">📑</div>
+        <h3 class="card-title">Parts</h3>
+        <p class="card-text">22 Parts that organize the Constitution's structure.</p>
+      </a>
+      <a href="schedules.html" class="floating-card">
+        <div class="card-icon" style="background: rgba(108,99,255,0.1)">📋</div>
+        <h3 class="card-title">Schedules</h3>
+        <p class="card-text">12 Schedules containing additional details and lists.</p>
+      </a>
+      <a href="quiz.html" class="floating-card">
+        <div class="card-icon" style="background: rgba(0,210,255,0.1)">🧠</div>
+        <h3 class="card-title">Quiz</h3>
+        <p class="card-text">Test your constitutional knowledge interactively.</p>
+      </a>
+      <a href="timeline.html" class="floating-card">
+        <div class="card-icon" style="background: rgba(255,107,107,0.1)">🕐</div>
+        <h3 class="card-title">Timeline</h3>
+        <p class="card-text">Trace the development of India's Constitution.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">🏛️ KnowConstitution</div>
+        <p class="footer-desc">A comprehensive civic education platform dedicated to making the Indian Constitution accessible and understandable for every citizen.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="overview.html">Constitution Overview</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Constitution</h4>
+        <ul>
+          <li><a href="rights.html">Fundamental Rights</a></li>
+          <li><a href="duties.html">Fundamental Duties</a></li>
+          <li><a href="dpsp.html">Directive Principles</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="parts.html">Parts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="amendments.html">Amendments</a></li>
+          <li><a href="schedules.html">Schedules</a></li>
+          <li><a href="cases.html">Case Laws</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 KnowConstitution. Educational Purpose Only.</span>
+      <div class="tricolor-line" style="width: 80px;"></div>
+      <span>Made with ❤️ for India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

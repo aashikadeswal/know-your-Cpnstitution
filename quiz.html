@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test your knowledge of the Indian Constitution with our interactive quiz.">
+  <title>Quiz – KnowConstitution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-loader" id="pageLoader"><div class="loader-chakra"></div></div>
+<div class="parallax-bg" id="parallaxBg"><div class="layer layer-dots"></div><div class="layer layer-gradient"></div></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">🏛️</span><span>KnowConstitution</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="about.html">About</a>
+      <div class="nav-dropdown"><a href="#" class="dropdown-toggle">Constitution</a><div class="dropdown-menu"><a href="overview.html">Overview</a><a href="rights.html">Fundamental Rights</a><a href="duties.html">Fundamental Duties</a><a href="dpsp.html">Directive Principles</a><a href="articles.html">Articles (1–395)</a><a href="parts.html">Parts</a><a href="schedules.html">Schedules</a></div></div>
+      <a href="amendments.html">Amendments</a><a href="cases.html">Case Laws</a><a href="timeline.html">Timeline</a>
+      <div class="nav-dropdown"><a href="#" class="dropdown-toggle">More</a><div class="dropdown-menu"><a href="search.html">🔍 Search</a><a href="quiz.html">📝 Quiz</a><a href="contact.html">📧 Contact</a></div></div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle Theme">🌙</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Constitution <span class="text-saffron">Quiz</span></h1>
+    <div class="tricolor-line"></div>
+    <p>Test your knowledge of the Indian Constitution</p>
+  </div>
+</div>
+
+<section class="section" style="padding-top: 20px;">
+  <div class="container">
+    <div class="quiz-container">
+
+      <!-- Start Screen -->
+      <div id="quizStartScreen" class="quiz-card" style="text-align: center;">
+        <div style="font-size: 4rem; margin-bottom: 20px;">🧠</div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 12px;">Constitutional Knowledge Quiz</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 8px;">Test your understanding of the Indian Constitution with 20 carefully curated questions covering:</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 400px; margin: 24px auto 32px;">
+          <div style="padding: 12px; background: rgba(255,153,51,0.08); border-radius: 10px; font-size: 0.9rem; font-weight: 500;">📜 Articles & Parts</div>
+          <div style="padding: 12px; background: rgba(19,136,8,0.08); border-radius: 10px; font-size: 0.9rem; font-weight: 500;">⚖️ Rights & Duties</div>
+          <div style="padding: 12px; background: rgba(108,99,255,0.08); border-radius: 10px; font-size: 0.9rem; font-weight: 500;">✏️ Amendments</div>
+          <div style="padding: 12px; background: rgba(0,210,255,0.08); border-radius: 10px; font-size: 0.9rem; font-weight: 500;">⚡ Case Laws</div>
+        </div>
+        <button class="btn btn-primary" id="quizStart" style="font-size: 1.1rem; padding: 16px 40px;">
+          Start Quiz →
+        </button>
+      </div>
+
+      <!-- Quiz Card (hidden initially) -->
+      <div id="quizCard" class="quiz-card" style="display: none;">
+        <div class="quiz-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" id="quizProgressFill" style="width: 0%"></div>
+          </div>
+          <span class="progress-text" id="quizProgressText">1 / 20</span>
+        </div>
+        <h3 class="quiz-question" id="quizQuestion"></h3>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div class="quiz-actions">
+          <button class="btn btn-primary" id="quizNext" style="display: none;">Next Question →</button>
+        </div>
+      </div>
+
+      <!-- Quiz Result (hidden initially) -->
+      <div id="quizResult" class="quiz-card" style="display: none;"></div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">🏛️ KnowConstitution</div><p class="footer-desc">A comprehensive civic education platform for every citizen.</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="overview.html">Overview</a></li><li><a href="search.html">Search</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Constitution</h4><ul><li><a href="rights.html">Rights</a></li><li><a href="duties.html">Duties</a></li><li><a href="dpsp.html">DPSP</a></li><li><a href="articles.html">Articles</a></li><li><a href="parts.html">Parts</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="amendments.html">Amendments</a></li><li><a href="schedules.html">Schedules</a></li><li><a href="cases.html">Case Laws</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="quiz.html">Quiz</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 KnowConstitution.</span><div class="tricolor-line" style="width:80px;"></div><span>Made with ❤️ for India</span></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
