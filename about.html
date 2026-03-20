@@ -161,11 +161,27 @@
 </footer>
 
 <script src="script.js"></script>
-  <iframe
-    src="https://www.chatbase.co/chatbot-iframe/g6AylJNvPvuz_jAulG9b5"
-    width="100%"
-    style="height: 100%; min-height: 700px"
-    frameborder="0"
-></iframe>
+  // --- SERVER CODE ---
+const jwt = require('jsonwebtoken');
+
+const secret = process.env.CHATBOT_IDENTITY_SECRET; // Your chatbase secret key (should be stored as a secret not in the code)
+
+const user = await getSignedInUser(); // Get the current user signed in to your site
+
+const token = jwt.sign(
+    { 
+        user_id: user.id, // Your user's id
+        email: user.email, // User's email
+        stripe_accounts: user.stripe_accounts, // User's stripe accounts for stripe integration
+        // ... other custom attributes
+    }, 
+    secret, 
+    { expiresIn: '1h' }
+);
+
+// --- CLIENT CODE ---
+const token = await getUserToken(); // Get the token from your server
+window.chatbase('identify', { token }); // identify the user with Chatbase
+
 </body>
 </html>
